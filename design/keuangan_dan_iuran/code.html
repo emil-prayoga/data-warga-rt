@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-container":"#c1eac1","tertiary-fixed-dim":"#b9ce9b","tertiary":"#2c3d18","surface-bright":"#f3fbff","inverse-primary":"#a2d0bd","primary-container":"#2b5748","background":"#f3fbff","primary-fixed":"#bdedd9","error-container":"#ffdad6","on-tertiary":"#ffffff","tertiary-fixed":"#d5eab6","on-surface":"#111d22","surface-container-high":"#ddeaf1","on-tertiary-fixed-variant":"#3b4c25","surface":"#f3fbff","surface-container":"#e3f0f6","tertiary-container":"#43542d","on-surface-variant":"#414945","surface-dim":"#cfdce2","on-secondary-fixed-variant":"#2b4e30","on-primary":"#ffffff","secondary":"#426746","on-tertiary-container":"#b3c896","surface-container-lowest":"#ffffff","surface-variant":"#d8e5eb","surface-tint":"#3b6757","outline":"#717974","on-primary-fixed":"#002117","on-tertiary-fixed":"#111f01","outline-variant":"#c0c8c3","on-secondary-container":"#466b4a","on-secondary":"#ffffff","inverse-on-surface":"#e6f3f9","on-secondary-fixed":"#002109","primary":"#114032","on-primary-fixed-variant":"#224f40","on-error":"#ffffff","secondary-fixed-dim":"#a8d1a9","on-error-container":"#93000a","primary-fixed-dim":"#a2d0bd","on-background":"#111d22","secondary-fixed":"#c3edc4","error":"#ba1a1a","surface-container-low":"#e9f6fc","inverse-surface":"#263237","surface-container-highest":"#d8e5eb","on-primary-container":"#9ccbb8"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-lg":"1.5rem","space-md":"1rem","space-xl":"2.25rem","gutter":"1.25rem","space-sm":"0.5rem","margin":"2rem","margin-mobile":"1rem","gutter-mobile":"0.75rem"},"fontFamily":{"body-md":["Inter"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"label-lg":["Inter"],"label-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"tabular-number":["Inter"],"label-md":["Inter"]},"fontSize":{"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"display-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"tabular-number":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 min-h-0"><div class="p-space-lg flex items-center gap-space-sm bg-surface-container-low"><img alt="Logo RT Digital" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VyzmQAZN5jzFkZ6yO2AGduWO3AtifOm_V8IJTtsaRG3qH0MYzV1QlvxfUNXr3zQ-K_wMBSJLW7MRu0JKunE2p5HqGkHrCDBS94LasnI_F55TK3BMFcAouy1rWA62Nl6BBFCfupAnz61bxUJJYnpOfHjZ5NHnrrC-U_sATdt6qci255WGwlRBQnLlbdTLlWk59Goq396DRmOkLigZjBuWrZOX7pMm1QTwAxR57U-cW2NAzo9KBt_JEZ8K0"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate">RT Digital 04/08</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Sistem Administrasi &amp; Warga Cerdas</span></div></div><div class="px-space-md py-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider px-space-sm">Menu Utama</span></div><nav class="flex-1 px-space-md space-y-space-xs overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-xl shadow-[0_1px_4px_rgba(17,64,50,0.12)]"><a class="flex items-center justify-between px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="dashboard-ikhtisar" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="truncate">Dashboard Ikhtisar</span></div></a><a class="flex items-center justify-between px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="kependudukan-dan-kk" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="material-symbols-outlined text-[20px]">groups</span><span class="truncate">Kependudukan &amp; KK</span></div><span class="px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-tabular-number">148 KK</span></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-space-sm transition-colors bg-primary-container text-on-primary font-label-lg rounded-xl shadow-[0_1px_4px_rgba(17,64,50,0.12)]" data-path="keuangan-dan-iuran" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="material-symbols-outlined text-[20px]">payments</span><span class="truncate">Keuangan &amp; Iuran</span></div><span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Bulan Ini</span></a><a class="flex items-center justify-between px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="administrasi-dan-surat" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="material-symbols-outlined text-[20px]">description</span><span class="truncate">Administrasi &amp; Surat</span></div><span class="px-space-xs py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm">3 Pending</span></a><a class="flex items-center justify-between px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="pengumuman-dan-layanan-publik" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="truncate">Pengumuman &amp; Layanan</span></div></a><a class="flex items-center justify-between px-space-sm py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="manajemen-pengguna-rbac" href="#"><div class="flex items-center gap-space-sm min-w-0"><span class="material-symbols-outlined text-[20px]">verified_user</span><span class="truncate">Manajemen Pengguna</span></div></a></nav></div><div class="p-space-md space-y-space-sm bg-surface-container-low"><button class="w-full flex items-center justify-between px-space-sm py-space-xs rounded-xl bg-surface-container-lowest text-primary hover:bg-surface-container-high hover:text-on-surface transition-colors shadow-[0_1px_4px_rgba(0,0,0,0.04)]" type="button"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-error">emergency</span><span class="font-label-md text-label-md font-semibold">Kontak Darurat</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Polsek/Damkar</span></button><div class="flex items-center justify-between px-space-xs text-on-surface-variant"><span class="font-label-sm text-label-sm">Sistem RT v2.4</span><span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary"><span class="w-2 h-2 rounded-full bg-secondary inline-block"></span>Aktif</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant">search</span><input class="w-full pl-9 pr-space-md py-space-xs rounded-xl bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/60 font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Cari Warga (NIK, No KK, atau Nama Lengkap)..." type="text"/></div><div class="hidden xl:flex items-center px-space-sm py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm whitespace-nowrap"><span class="material-symbols-outlined text-[14px] mr-1">location_on</span>RT 04 / RW 08 Kel. Sukamaju</div></div><div class="flex items-center gap-space-md"><button aria-label="Notifikasi Permohonan" class="relative p-space-xs rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></button><div class="h-6 w-px bg-surface-variant"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface">Bpk. Hendra Gunawan</span><span class="font-label-sm text-label-sm text-on-surface-variant">Ketua RT (Administrator)</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDDlNVW7tuPq8-tPxDQXegZmlW_wZktChrnRQ8AAEXfXfVNyMRhXAVfLem4DtMfqftRej0rkyJUhf5FVmH2Toqk247u6lUNO1EBGg9h7d_WjtHD4wsFa7spGHY4DxWry8Vj424RhLqIqxmiGlAyQ-JATwYPPsBhonwVm8xMDWRkub4MBpeB5CcOdf7DfUZiEK4Mk5arJQ1TWCCrpdSd3OEoAiH4BTNsBUHPkgG8NTSjqezR__vbcG9"/></div></div></header><main class="relative pt-16 w-full px-space-lg py-space-lg bg-surface min-h-screen"><div class="flex flex-col w-full space-y-space-lg">
+<!-- Top Bar: Context Title & Action Toolbar -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider">
+          Tahun Anggaran 2025
+        </span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">•</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Periode Berjalan: Maret 2025</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+        Manajemen Keuangan &amp; Iuran Warga RT 04
+      </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Transparansi pembukuan kas, rekapitulasi iuran kebersihan/keamanan, serta rekonsiliasi pembayaran real-time.
+      </p>
+</div>
+<!-- Quick Action Hub -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="flex items-center gap-space-xs px-space-sm py-2 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download Laporan PDF</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-sm py-2 rounded-lg bg-surface-container-high hover:bg-surface-container text-secondary font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Kirim Reminder WA</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-sm py-2 rounded-lg bg-surface-container-high hover:bg-surface-container text-primary font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Catat Manual</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">output</span>
+<span>Input Pengeluaran</span>
+</button>
+</div>
+</div>
+<!-- KPI Metric Overview Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1: Total Saldo Kas -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Saldo Kas Total</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="font-display-lg text-display-lg text-primary tracking-tight font-tabular-number">
+          Rp 38.450.000
+        </div>
+<div class="flex items-center gap-1.5 mt-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Kas, Keamanan &amp; Kebersihan terpadu</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Rek BCA RT 04: Rp 31.2jt</span>
+<span>Kas Tunai: Rp 7.25jt</span>
+</div>
+</div>
+<!-- Card 2: Realisasi Bulan Ini -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Realisasi Tagihan (Mar 2025)</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">pie_chart</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface tracking-tight font-tabular-number">Rp 14.850.000</span>
+<span class="font-label-sm text-label-sm text-secondary font-tabular-number">83.6%</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-2 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 83.6%"></div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Target: Rp 17.760.000</span>
+<span class="text-secondary font-semibold">124 / 148 KK</span>
+</div>
+</div>
+<!-- Card 3: Total Pengeluaran Bulan Ini -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Pengeluaran Bulan Ini</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="font-display-lg text-display-lg text-on-surface tracking-tight font-tabular-number">
+          Rp 8.350.000
+        </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 truncate">
+          Sampah (Rp 3.5jt), Satpam, PJU
+        </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>8 Transaksi Tercatat</span>
+<span class="text-primary font-semibold">Audit Sesuai RAPB</span>
+</div>
+</div>
+<!-- Card 4: Tunggakan Belum Bayar -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Tunggakan Belum Bayar</span>
+<div class="w-8 h-8 rounded-lg bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-error tracking-tight font-tabular-number">24 Rumah</span>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant mt-1 font-tabular-number">
+          Nominal: Rp 2.910.000
+        </div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">19 warga (1 bln)</span>
+<span class="text-error font-semibold">5 warga (&gt;2 bln)</span>
+</div>
+</div>
+</div>
+<!-- Primary Tab Navigator -->
+<div class="flex items-center justify-between bg-surface-container-lowest p-1.5 rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs overflow-x-auto">
+<button class="px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-sm flex items-center gap-space-xs whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[18px]">table_rows</span>
+<span>Rekap Iuran Per Rumah / KK</span>
+<span class="px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-tabular-number">148</span>
+</button>
+<button class="px-space-md py-2 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-space-xs whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span>Buku Kas &amp; Jurnal Pengeluaran</span>
+</button>
+<button class="px-space-md py-2 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-space-xs whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>Laporan Keuangan Transparan Warga</span>
+</button>
+</div>
+<div class="hidden md:flex items-center gap-space-xs px-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Sinkronisasi Kas Terakhir: Hari ini, 09:42 WIB</span>
+</div>
+</div>
+<!-- Two Column Layout: Main Ledger Grid (8 cols) & Real-time Transparency / Cash Flow (4 cols) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Main Iuran Table Area (8 cols) -->
+<div class="xl:col-span-8 space-y-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<!-- Filter Controls -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<!-- Blok Filter -->
+<div class="flex items-center bg-surface-container-low rounded-lg p-1">
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold shadow-sm" type="button">Semua Blok</button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Blok A</button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Blok B</button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Blok C</button>
+</div>
+<!-- Status Dropdown -->
+<div class="relative">
+<select class="appearance-none bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-lg pl-space-sm pr-7 py-2 focus:outline-none">
+<option>Status: Semua Tagihan</option>
+<option>Status: Lunas</option>
+<option>Status: Menunggak 1 Bln</option>
+<option>Status: Menunggak &gt;2 Bln</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none text-[16px] text-on-surface-variant">expand_more</span>
+</div>
+</div>
+<!-- Quick Search in Table -->
+<div class="relative w-full md:w-60">
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-[16px] text-on-surface-variant">search</span>
+<input class="w-full pl-8 pr-3 py-1.5 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Cari nama KK / nomor rumah..." type="text"/>
+</div>
+</div>
+<!-- Ledger Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2.5 px-space-sm rounded-l-lg">No. Rumah &amp; Nama KK</th>
+<th class="py-2.5 px-space-sm">Komponen Iuran</th>
+<th class="py-2.5 px-space-sm">Status Mar 2025</th>
+<th class="py-2.5 px-space-sm text-center">Bukti Bayar</th>
+<th class="py-2.5 px-space-sm text-center">Riwayat (Jan-Mar)</th>
+<th class="py-2.5 px-space-sm rounded-r-lg text-right">Aksi</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-sm text-body-sm">
+<!-- Row 1: Lunas -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-primary">
+                      A1-04
+                    </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Bpk. Ahmad Dahlan</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Blok A1 No. 04 • Warga Tetap</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col font-tabular-number">
+<span class="font-semibold text-primary">Rp 120.000 / bln</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kebersihan 45k, Keamanan 50k, Sosial 25k</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>LUNAS (BCA 03 Mar)</span>
+</div>
+</td>
+<td class="py-3 px-space-sm text-center">
+<button class="p-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary inline-flex items-center justify-center" title="Lihat Kuitansi #INV-2503-04" type="button">
+<span class="material-symbols-outlined text-[16px]">receipt</span>
+</button>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex items-center justify-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary" title="Jan: Lunas"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary" title="Feb: Lunas"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary" title="Mar: Lunas"></span>
+</div>
+</td>
+<td class="py-3 px-space-sm text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container" title="Cetak Kuitansi Digital" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+</button>
+<button class="p-1.5 rounded text-on-surface-variant hover:text-secondary hover:bg-surface-container" title="Kirim Nota WA" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Lunas -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-bright/40">
+<td class="py-3 px-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-primary">
+                      A1-05
+                    </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Ibu Ratna Sarumpaet</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Blok A1 No. 05 • Warga Tetap</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col font-tabular-number">
+<span class="font-semibold text-primary">Rp 120.000 / bln</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kebersihan 45k, Keamanan 50k, Sosial 25k</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>LUNAS (Tunai Koordinator)</span>
+</div>
+</td>
+<td class="py-3 px-space-sm text-center">
+<button class="p-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary inline-flex items-center justify-center" title="Lihat Kuitansi #INV-2503-05" type="button">
+<span class="material-symbols-outlined text-[16px]">receipt</span>
+</button>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex items-center justify-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary" title="Jan: Lunas"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary" title="Feb: Lunas"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary" title="Mar: Lunas"></span>
+</div>
+</td>
+<td class="py-3 px-space-sm text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container" title="Cetak Kuitansi Digital" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+</button>
+<button class="p-1.5 rounded text-on-surface-variant hover:text-secondary hover:bg-surface-container" title="Kirim Nota WA" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Belum Lunas (1 Bulan) -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface-variant">
+                      A2-02
+                    </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Bpk. Kevin Wijaya</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Blok A2 No. 02 • Warga Domisili</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col font-tabular-number">
+<span class="font-semibold text-error">Rp 120.000 (Tunggak)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tagihan Reguler Maret</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>BELUM LUNAS (1 Bln)</span>
+</div>
+</td>
+<td class="py-3 px-space-sm text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">-</span>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex items-center justify-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary" title="Jan: Lunas"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary" title="Feb: Lunas"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-error" title="Mar: Belum Bayar"></span>
+</div>
+</td>
+<td class="py-3 px-space-sm text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm hover:opacity-90" type="button">
+                      Konfirmasi Bayar
+                    </button>
+<button class="p-1 rounded text-secondary hover:bg-surface-container" title="Kirim Tagihan WA Otomatis" type="button">
+<span class="material-symbols-outlined text-[18px]">notifications_active</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Menunggak > 2 Bulan -->
+<tr class="hover:bg-surface-container-low transition-colors bg-error-container/20">
+<td class="py-3 px-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-error-container text-on-error-container flex items-center justify-center font-label-sm text-label-sm font-bold">
+                      B1-11
+                    </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Bpk. Ronald Simatupang</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Blok B1 No. 11 • Rumah Kontrak</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col font-tabular-number">
+<span class="font-semibold text-error">Rp 360.000 (3 Bln)</span>
+<span class="font-label-sm text-label-sm text-error">Jan, Feb, Mar 2025</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-error text-on-error font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">error</span>
+<span>MENUNGGAK (&gt;2 Bln)</span>
+</div>
+</td>
+<td class="py-3 px-space-sm text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">-</span>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex items-center justify-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-error" title="Jan: Menunggak"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-error" title="Feb: Menunggak"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-error" title="Mar: Menunggak"></span>
+</div>
+</td>
+<td class="py-3 px-space-sm text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2 py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm" type="button">
+                      Bayar Kolektif
+                    </button>
+<button class="p-1 rounded text-error hover:bg-surface-container" title="Surat Peringatan WA" type="button">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Lunas Tahunan -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3 px-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-primary">
+                      B2-06
+                    </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Dra. Hj. Nurjanah</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Blok B2 No. 06 • Warga Tetap</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col font-tabular-number">
+<span class="font-semibold text-secondary">Rp 1.440.000 (1 Thn)</span>
+<span class="font-label-sm text-label-sm text-secondary">Lunas s/d Des 2025</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">stars</span>
+<span>LUNAS 1 TAHUN PENUH</span>
+</div>
+</td>
+<td class="py-3 px-space-sm text-center">
+<button class="p-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary inline-flex items-center justify-center" title="Invoice Tahunan" type="button">
+<span class="material-symbols-outlined text-[16px]">receipt</span>
+</button>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex items-center justify-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary" title="Jan: Lunas"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary" title="Feb: Lunas"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary" title="Mar: Lunas"></span>
+</div>
+</td>
+<td class="py-3 px-space-sm text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container" title="Cetak Kuitansi" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+</button>
+<button class="p-1.5 rounded text-on-surface-variant hover:text-secondary hover:bg-surface-container" title="Kirim WA" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div>
+            Menampilkan <span class="font-semibold text-on-surface">1 - 5</span> dari <span class="font-semibold text-on-surface">148 Rumah</span> terdaftar di RT 04
+          </div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface-variant/40 cursor-not-allowed font-label-sm text-label-sm" disabled="" type="button">Sebelumnya</button>
+<button class="w-7 h-7 rounded bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center" type="button">1</button>
+<button class="w-7 h-7 rounded bg-surface-container text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm flex items-center justify-center" type="button">2</button>
+<button class="w-7 h-7 rounded bg-surface-container text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm flex items-center justify-center" type="button">3</button>
+<button class="px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm" type="button">Selanjutnya</button>
+</div>
+</div>
+</div>
+<!-- Komposisi Alokasi Iuran Breakdown (Informational Card) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-sm">
+<div class="p-2 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-[22px]">delete</span>
+</div>
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Kebersihan &amp; Sampah</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-tabular-number">Rp 45.000 / KK</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Armada angkut tiap Selasa, Kamis, Sabtu.</p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-sm">
+<div class="p-2 rounded-lg bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined text-[22px]">shield</span>
+</div>
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Keamanan &amp; Pos Ronda</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-tabular-number">Rp 50.000 / KK</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2 Petugas satpam shift 24 jam &amp; portal.</p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-sm">
+<div class="p-2 rounded-lg bg-surface-container-high text-on-surface">
+<span class="material-symbols-outlined text-[22px]">diversity_3</span>
+</div>
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Kas Sosial &amp; Operasional</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-tabular-number">Rp 25.000 / KK</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dana takziah, PJU, dan konsumsi kerja bakti.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Auto-Generated Cash Flow & Transparency Wall (4 cols) -->
+<div class="xl:col-span-4 space-y-space-md">
+<!-- Laporan Kas Auto-Generate Container -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="space-y-0.5">
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">
+              Laporan Kas Auto-Generate
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Jurnal pembukuan masuk &amp; keluar mutakhir
+            </p>
+</div>
+<span class="p-1.5 rounded-lg bg-surface-container-low text-primary">
+<span class="material-symbols-outlined text-[20px]">auto_stories</span>
+</span>
+</div>
+<!-- Flow Items List -->
+<div class="space-y-space-sm">
+<!-- Item 1: Pemasukan Kolektif -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-xs min-w-0">
+<div class="w-7 h-7 rounded bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-md text-label-md text-on-surface truncate">Iuran Warga Kolektif Blok B</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">35 KK • Diterima Koordinator</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">05 Mar 2025 • Kas Masuk</span>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-lg text-label-lg font-bold text-secondary font-tabular-number">+Rp 4.200.000</span>
+</div>
+</div>
+<!-- Item 2: Pengeluaran Petugas Sampah -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-xs min-w-0">
+<div class="w-7 h-7 rounded bg-error-container text-on-error-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-md text-label-md text-on-surface truncate">Honor Petugas Sampah (2 Org)</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Gaji Periode Feb-Mar • Pak Joko &amp; Pak Min</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">04 Mar 2025 • Operasional</span>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-lg text-label-lg font-bold text-error font-tabular-number">-Rp 3.500.000</span>
+</div>
+</div>
+<!-- Item 3: Pengeluaran Lampu Sorot PJU -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-xs min-w-0">
+<div class="w-7 h-7 rounded bg-error-container text-on-error-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-md text-label-md text-on-surface truncate">4 Lampu Sorot LED PJU Gang Flamboyan</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Nota Toko Listrik Terang Jaya</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">02 Mar 2025 • Pemeliharaan</span>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-lg text-label-lg font-bold text-error font-tabular-number">-Rp 650.000</span>
+</div>
+</div>
+<!-- Item 4: Konsumsi Kerja Bakti -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-xs min-w-0">
+<div class="w-7 h-7 rounded bg-error-container text-on-error-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-md text-label-md text-on-surface truncate">Konsumsi Kerja Bakti Saluran Air</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Snack &amp; Kopi Warga • Minggu Pagi</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">01 Mar 2025 • Kegiatan Sosial</span>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-lg text-label-lg font-bold text-error font-tabular-number">-Rp 450.000</span>
+</div>
+</div>
+</div>
+<!-- Cetak Mading Button & Action CTA -->
+<div class="pt-space-xs space-y-space-xs">
+<button class="w-full flex items-center justify-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">newspaper</span>
+<span>Cetak Laporan Transparan Dinding Mading</span>
+</button>
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant">
+            Format resmi siap cetak ukuran A4/F4 dengan barcode audit warga.
+          </p>
+</div>
+</div>
+<!-- Public QR Transparency Verification Card -->
+<div class="rounded-xl bg-primary text-on-primary p-space-md shadow-sm space-y-space-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed">Papan Transparansi Digital</span>
+<span class="material-symbols-outlined text-[20px] text-primary-fixed">qr_code_scanner</span>
+</div>
+<div class="space-y-1">
+<div class="font-headline-sm text-headline-sm text-on-primary font-semibold">Portal Terbuka Warga RT 04</div>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+            Warga dapat memindai barcode pengumuman di portal pos satpam atau grup WA untuk memeriksa saldo kas dan riwayat kuitansi mandiri secara real-time tanpa login admin.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed">Tautan Publik:</span>
+<span class="font-label-md text-label-md font-mono text-on-primary">rt04-sukamaju.id/kas-transparan</span>
+</div>
+<button class="px-space-sm py-1.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm hover:bg-surface-tint transition-colors" type="button">
+            Salin Link
+          </button>
+</div>
+</div>
+<!-- Quick Emergency Cash Reserve Status -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">health_and_safety</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">Dana Darurat Siaga RT</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Alokasi Cadangan Siaga Medis / Bencana</div>
+</div>
+</div>
+<div class="font-headline-sm text-headline-sm text-secondary font-tabular-number font-semibold">
+          Rp 5.000.000
+        </div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
